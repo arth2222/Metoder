@@ -10,15 +10,19 @@ namespace ConsoleApp1Slett9999
     {
         static void Main(string[] args)
         {
-            string test = "123 ";
-            string trimmet=test.Trim();
+            //Kall på metodene som er definert under.
+            //Der hvor det er en return, opprett variabel for å holde på returverdien
+
+            Console.ReadLine();//for at consolet ikke skal stenges
         }
 
         public static void SkrivHei()
         {
+            //Skriv kodelinjen som skriver hei ut til console
 
         }
 
+        
         public static string ReturnerHei()
         {
             string bolle = "Hei";
@@ -30,17 +34,15 @@ namespace ConsoleApp1Slett9999
             Console.WriteLine(tekst);
         }
 
-
-        // Function to remove a character at the specified index
-        public static string remove_char(string str, int n)
-        {
-            return str.Remove(0, 5); // Using Remove method to eliminate the character at index n
-        }
-
-
+        
         public static int Add(int tall1, int tall2)
         {
             return tall1 + tall2;
+        }
+
+        public static void AddNoReturn(int num1, int num2)
+        {
+            Console.WriteLine(num1+num2);
         }
     }
 }
